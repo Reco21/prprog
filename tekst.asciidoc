@@ -8,6 +8,8 @@ Oto wstep do mojej pracy... :D
 
 Oto pierwsyz rozdział mojej pracy. Na pewno ... hhehe, "szybko" coś nawklikuje... 
 
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layput. The point of using Lorem Ipsum is that it has a more =or-less normal distribution of letters, as opposed to using " content here, content here' , making it look like readeble english. xD napisalme to po porsut bo ctrl+c i ctrl+v nie chcom wspolpracowac :/ 
+
 >>> Książka  >>> 
 image::book.jpg
 
