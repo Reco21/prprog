@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    
+    <title>404</title>
+    
+  </head>
+
+  <body class="home" >
+
+    <div id="container" style="width:800px;">
+          <div id="content">
+            <div id="content_inner" style="padding-top:25px;padding-bottom:25px;">
+                <p>
+                  We're sorry but the page you requested has not been found.
+                </p>
+            </div> <!--end content_inner //-->
+          </div> <!--end content //-->
+      
+    </div> <!--end container //-->
+    
+  </body>
+</html>
+

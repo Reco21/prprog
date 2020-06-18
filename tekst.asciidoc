@@ -4,4 +4,9 @@
 
 Oto wstep do mojej pracy... :D
 
+ == Pierwszy rozdział ==
 
+Oto pierwsyz rozdział mojej pracy. Na pewno ... hhehe, "szybko" coś nawklikuje... 
+
+>>> Książka  >>> 
+image::book.jpg
