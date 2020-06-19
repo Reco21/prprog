@@ -16,44 +16,50 @@ public class Main {
         System.out.println(String.format("Liczba osób  na liście: ", peopleStats.count()));
         System.out.println(String.format("Liczba osób z oryginalnymi nazwiskami: ", peopleStats.countUniqueLastNames()));
     }
-class PeopleStats {
-    private final List<Person> people;
 
-    public PeopleStats(Path inputFilePath) {
-        try {
-            people = Files.lines(inputFilePath)
-                    .map(line -> line.split("\t"))
-                    .map(chunks -> new Person(chunks[0], chunks[1]))
-                    .collect(Collectors.toList());
-        } catch (IOException e) {
-            throw new IllegalStateException(e);
+    class PeopleStats {
+        private final List<Person> people;
+
+        public PeopleStats(Path inputFilePath) {
+            try {
+                people = Files.lines(inputFilePath)
+                        .map(line -> line.split("\t"))
+                        .map(chunks -> new Person(chunks[0], chunks[1]))
+                        .collect(Collectors.toList());
+            } catch (IOException e) {
+                throw new IllegalStateException(e);
+            }
+        }
+
+        public long count() {
+            return people.size();
+        }
+
+        public long countUniqueLastNames() {
+            return people.stream()
+                    .map(Person::getLastName)
+                    .distinct()
+                    .count();
         }
     }
-    public long count() {
-        return people.size();
-    }
-    public long countUniqueLastNames() {
-        return people.stream()
-                .map(Person::getLastName)
-                .distinct()
-                .count();
-    }
-}
-class Person {
-    private final String firstName;
-    private final String lastName;
 
-    public Person(String firstName, String lastName) {
+    class Person {
+        private final String firstName;
+        private final String lastName;
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    public String getFirstName() {
+        public Person(String firstName, String lastName) {
 
-        return firstName;
-    }
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
 
-    public String getLastName() {
-        return lastName;
+        public String getFirstName() {
+
+            return firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
     }
 }
